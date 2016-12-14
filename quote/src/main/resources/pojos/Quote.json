@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "description": "Single exchange quote details",
+  "type": "object",
+  "id": "Quote",
+  "additionalProperties": false,
+  "generate-builders": true,
+  "properties": {
+    "source": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "string",
+      "required": true
+    },
+    "quote": {
+      "type": "number",
+      "required": true
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

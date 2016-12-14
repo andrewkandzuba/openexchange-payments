@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "description": "List of supported currencies",
+  "type": "object",
+  "id": "Currencies",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "required": true
+    },
+    "error" : {
+      "$ref" : "Error.json",
+      "required": false
+    },
+    "terms": {
+      "type": "string",
+      "required": false
+    },
+    "privacy": {
+      "type": "string",
+      "required": false
+    },
+    "currencies": {
+      "javaType" : "java.util.Map<String, String>",
+      "type" : "object",
+      "required": false
+    }
+  }
+}

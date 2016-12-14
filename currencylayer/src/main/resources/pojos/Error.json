@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "description": "Error details",
+  "type": "object",
+  "id": "Error",
+  "additionalProperties" : false,
+  "generate-builders": true,
+  "properties": {
+    "code": {
+      "type": "integer",
+      "required": true
+    },
+    "info": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

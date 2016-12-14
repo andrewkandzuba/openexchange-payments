@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "description": "List of quotes",
+  "type": "object",
+  "id": "Quotes",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "required": true
+    },
+    "error" : {
+      "$ref" : "Error.json",
+      "required": false
+    },
+    "terms": {
+      "type": "string",
+      "required": false
+    },
+    "privacy": {
+      "type": "string",
+      "required": false
+    },
+    "historical": {
+      "type": "boolean",
+      "default": "false",
+      "required": false
+    },
+    "date":{
+      "type":"string",
+      "format":"date",
+      "required": false
+    },
+    "timestamp": {
+      "type":"string",
+      "format":"utc-millisec",
+      "required": false
+    },
+    "source": {
+      "type": "string",
+      "required": true
+    },
+    "quotes": {
+      "javaType": "java.util.Map<String, Double>",
+      "type": "object",
+      "required": true
+    }
+  }
+}
