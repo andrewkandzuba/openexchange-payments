@@ -5,11 +5,11 @@
     <parent>
         <groupId>org.openexchange</groupId>
         <artifactId>openexchange-payments</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
 
     <artifactId>currency</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>openexchange ::: ${project.artifactId}</name>
@@ -18,12 +18,12 @@
         <dependency>
             <groupId>org.openexchange</groupId>
             <artifactId>quote</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.openexchange</groupId>
             <artifactId>rabbitmq-quote-transport</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.openexchange</groupId>
